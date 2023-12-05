@@ -21,17 +21,11 @@ Fully Connected Layers: Make predictions based on features extracted by the Ince
 Output Layer: Produces probability scores for the presence or absence of cardiomegaly.
 
 Data Preprocessing: Resizing, normalization, and augmentation of input images.
-Model Compilation: Choosing an optimizer, loss function, and evaluation metric.
+Model Compilation: loss='binary_crossentropy', optimizer='adam',
 Training: Iteratively updating model weights using labeled training data.
 Validation: Assessing model performance on a separate validation set to avoid overfitting.
-Evaluation Metrics
-The Cardiomegaly Classification model is evaluated using the following metrics:
 
-Accuracy: The percentage of correctly classified images.
-Precision: The proportion of true positive predictions among all positive predictions.
-Recall: The proportion of true positive predictions among all actual positive cases.
-F1 Score: The harmonic mean of precision and recall, providing a balanced measure.
-Conclusion
+# Conclusion
 The Cardiomegaly Classification system aims to assist in the automated classification of cardiomegaly in chest X-ray images. Regular updates to the model and retraining on additional data may improve its performance over time.
 
 Feel free to customize this documentation further based on specific details, code snippets, or additional information relevant to your implementationCardiomegaly Classification Documentation
