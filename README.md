@@ -13,15 +13,18 @@ Dataset Link: <a heref="https://nihcc.app.box.com/v/ChestXray-NIHCC">NIH CXR8 Da
 ## InceptionV3-Based Convolutional Neural Network (CNN)
 The Cardiomegaly Classification model is built upon the InceptionV3 architecture, a deep convolutional neural network that has proven effective for image classification tasks. InceptionV3 is known for its ability to capture complex patterns and features in images through the use of inception modules.
 
-Model Layers:
-Input Layer: Accepts chest X-ray images of fixed dimensions.
-Inception Blocks: Multiple blocks consisting of parallel convolutional and pooling operations with different filter sizes.
-Global Average Pooling Layer: Reduces spatial dimensions and retains important features globally.
-Fully Connected Layers: Make predictions based on features extracted by the InceptionV3 backbone.
-Output Layer: Produces probability scores for the presence or absence of cardiomegaly.
+### Model Layers:
+<ul>
+<li>Input Layer: Accepts chest X-ray images of fixed dimensions.</li>
+<li>Inception Blocks: Multiple blocks consisting of parallel convolutional and pooling operations with different filter sizes.</li>
+<li>Global Average Pooling Layer: Reduces spatial dimensions and retains important features globally.</li>
+<li>Fully Connected Layers: Make predictions based on features extracted by the InceptionV3 backbone.</li>
+<li>Output Layer: Produces probability scores for the presence or absence of cardiomegaly.</li>  
+</ul>
 
-Data Preprocessing: Resizing, normalization, and augmentation of input images.
-Model Compilation: loss='binary_crossentropy', optimizer='adam',
-Training: Iteratively updating model weights using labeled training data.
-Validation: Assessing model performance on a separate validation set to avoid overfitting.
-
+<ol>
+<li>Data Preprocessing: Resizing, normalization, and augmentation of input images.</li>
+<li>Model Compilation: loss='binary_crossentropy', optimizer='adam'</li>
+<li>Training: Iteratively updating model weights using labeled training data.</li>
+<li>Validation: Assessing model performance on a separate validation set to avoid overfitting.</li>
+</ol>
