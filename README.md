@@ -1,26 +1,24 @@
 # Cardiomegaly Classification 
 
-Overview
+## Overview
 The Cardiomegaly Classification system is designed to classify chest X-ray images into categories related to the presence or absence of cardiomegaly. This documentation provides information on the dataset, model architecture, training process, and evaluation metrics.
 
-Dataset
-NIH CXR8 Dataset
+# Dataset
+## NIH CXR8 Dataset
 The NIH CXR8 dataset is a collection of chest X-ray images curated by the National Institutes of Health (NIH). It consists of images labeled with various thoracic pathology categories, including cardiomegaly. The dataset is widely used for training and evaluating deep learning models for medical image analysis.
 
-Dataset Link: NIH Chest X-ray Dataset
+Dataset Link: <a heref="https://nihcc.app.box.com/v/ChestXray-NIHCC">NIH CXR8 Dataset</a>
 
-Model Architecture
-Convolutional Neural Network (CNN)
-The Cardiomegaly Classification model is based on a Convolutional Neural Network architecture. CNNs are well-suited for image classification tasks as they can automatically learn hierarchical representations from images.
+# Model Architecture
+## InceptionV3-Based Convolutional Neural Network (CNN)
+The Cardiomegaly Classification model is built upon the InceptionV3 architecture, a deep convolutional neural network that has proven effective for image classification tasks. InceptionV3 is known for its ability to capture complex patterns and features in images through the use of inception modules.
 
 Model Layers:
 Input Layer: Accepts chest X-ray images of fixed dimensions.
-Convolutional Layers: Extract features from input images.
-Pooling Layers: Reduce spatial dimensions and retain important features.
-Fully Connected Layers: Make predictions based on learned features.
+Inception Blocks: Multiple blocks consisting of parallel convolutional and pooling operations with different filter sizes.
+Global Average Pooling Layer: Reduces spatial dimensions and retains important features globally.
+Fully Connected Layers: Make predictions based on features extracted by the InceptionV3 backbone.
 Output Layer: Produces probability scores for the presence or absence of cardiomegaly.
-Training
-The model is trained using a supervised learning approach. The training process involves:
 
 Data Preprocessing: Resizing, normalization, and augmentation of input images.
 Model Compilation: Choosing an optimizer, loss function, and evaluation metric.
